@@ -1,5 +1,4 @@
-
-Action: file_editor create /app/cyberkids-cert/app.js --file-text "/* =========================================================
+/* =========================================================
    CYBER KIDS · Certificado personalizado
    100% client-side. Cero envío de datos.
    ========================================================= */
@@ -211,5 +210,4 @@ Action: file_editor create /app/cyberkids-cert/app.js --file-text "/* ==========
     'background:#0d4d8c;color:#7fd3ff;padding:6px 12px;border-radius:6px;font-weight:bold;');
   console.log('Tu nombre nunca sale de este navegador. Verifica el código en GitHub.');
 })();
-"
-Observation: Create successful: /app/cyberkids-cert/app.js
+
