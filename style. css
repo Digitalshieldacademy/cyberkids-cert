@@ -1,5 +1,4 @@
-
-Action: file_editor create /app/cyberkids-cert/style.css --file-text "/* =========================================================
+/* =========================================================
    CYBER KIDS · Digital Shield Academy
    Diseño cyberpunk para certificado personalizado
    ========================================================= */
@@ -694,4 +693,3 @@ body {
 .privacy-section { animation: slideUp 0.6s ease 0.3s backwards; }
 .next-missions { animation: slideUp 0.6s ease 0.4s backwards; }
 "
-Observation: Create successful: /app/cyberkids-cert/style.css
