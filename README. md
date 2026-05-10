@@ -1,0 +1,55 @@
+
+Action: file_editor create /app/cyberkids-cert/README.md --file-text "# 🛡️ Cyber Kids — Certificado Junior Cyber Hero
+
+Página web oficial para reclamar el certificado del libro **Cyber Kids — La Trampa del Phishing**, parte de **Digital Shield Academy** by Oscar Rivera.
+
+## 🔒 Promesa de privacidad
+
+**Cero recolección de datos.** Esta página:
+
+- ✅ No tiene servidor backend.
+- ✅ No tiene base de datos.
+- ✅ No usa cookies de seguimiento.
+- ✅ No envía tu nombre ni el de tu hijo a ningún sitio.
+- ✅ El certificado se genera **dentro de tu navegador** y se descarga directo a tu dispositivo.
+
+Cualquiera puede auditar el código fuente: solo HTML + CSS + JavaScript.
+
+## 📦 Cómo funciona
+
+1. El padre escanea el QR del libro.
+2. Llega a esta web.
+3. Escribe el nombre de su hijo/a.
+4. Ve la vista previa en tiempo real.
+5. Descarga el certificado en PDF o PNG, o lo imprime directo.
+
+## 🚀 Cómo publicarlo en GitHub Pages (desde el celular)
+
+Ver instrucciones detalladas en **[INSTRUCCIONES.md](INSTRUCCIONES.md)**.
+
+## 📁 Estructura
+
+```
+cyberkids-cert/
+├── index.html        ← Página principal
+├── style.css         ← Estilos cyberpunk
+├── app.js            ← Lógica (vista previa, PDF, PNG, imprimir)
+├── .nojekyll         ← Necesario para GitHub Pages
+├── README.md         ← Este archivo
+└── INSTRUCCIONES.md  ← Cómo subirlo paso a paso
+```
+
+## ⚙️ Tecnologías
+
+- HTML5 + CSS3 + JavaScript vanilla (sin frameworks)
+- [html2canvas](https://html2canvas.hertzen.com/) — captura el certificado a imagen
+- [jsPDF](https://github.com/parallax/jsPDF) — genera el PDF
+
+Ambas librerías cargan desde CDN público. No requieren instalación.
+
+---
+
+© 2026 Digital Shield Academy · Creado por Oscar Rivera
+*Sé inteligente. Sé seguro. ¡Sé un Cyber Kid!*
+"
+Observation: Create successful: /app/cyberkids-cert/README.md
