@@ -1,0 +1,287 @@
+
+Action: file_editor create /app/cyberkids-cert/index.html --file-text "<!DOCTYPE html>
+<html lang=\"es\">
+<head>
+<meta charset=\"UTF-8\" />
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+<meta name=\"description\" content=\"Reclama tu certificado Cyber Kids - Junior Cyber Hero. 100% privado, sin recolección de datos.\" />
+<meta name=\"theme-color\" content=\"#0a0e27\" />
+<title>Cyber Kids · Reclama tu Certificado · Digital Shield Academy</title>
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />
+<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&family=Caveat:wght@700&display=swap\" rel=\"stylesheet\" />
+<link rel=\"stylesheet\" href=\"style.css\" />
+</head>
+<body>
+
+<!-- Fondo animado de circuitos -->
+<div class=\"bg-grid\" aria-hidden=\"true\"></div>
+<div class=\"bg-glow\" aria-hidden=\"true\"></div>
+
+<!-- HEADER -->
+<header class=\"site-header\">
+  <div class=\"brand\">
+    <div class=\"brand-shield\">
+      <svg viewBox=\"0 0 64 64\" width=\"38\" height=\"38\" aria-hidden=\"true\">
+        <defs>
+          <linearGradient id=\"shieldGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">
+            <stop offset=\"0%\" stop-color=\"#3aa9ff\"/>
+            <stop offset=\"100%\" stop-color=\"#0d4d8c\"/>
+          </linearGradient>
+        </defs>
+        <path d=\"M32 4 L56 14 V32 C56 46 44 56 32 60 C20 56 8 46 8 32 V14 Z\" fill=\"url(#shieldGrad)\" stroke=\"#7fd3ff\" stroke-width=\"1.5\"/>
+        <path d=\"M22 30 h20 v14 a10 10 0 0 1 -20 0 z\" fill=\"#0a0e27\"/>
+        <circle cx=\"32\" cy=\"36\" r=\"3\" fill=\"#7fd3ff\"/>
+        <rect x=\"30\" y=\"36\" width=\"4\" height=\"6\" fill=\"#7fd3ff\"/>
+        <path d=\"M26 30 V24 a6 6 0 0 1 12 0 V30\" fill=\"none\" stroke=\"#7fd3ff\" stroke-width=\"2.5\"/>
+      </svg>
+    </div>
+    <div class=\"brand-text\">
+      <span class=\"brand-title\">DIGITAL SHIELD</span>
+      <span class=\"brand-sub\">A C A D E M Y</span>
+    </div>
+  </div>
+  <div class=\"privacy-pill\" data-testid=\"privacy-badge\">
+    <span class=\"pulse-dot\"></span>
+    CERO DATOS GUARDADOS
+  </div>
+</header>
+
+<!-- HERO -->
+<section class=\"hero\">
+  <div class=\"hero-tagline\">COLOR · APRENDE · PROTÉGETE</div>
+  <h1 class=\"hero-title\">
+    <span class=\"t-blue\">CYBER</span> <span class=\"t-yellow\">KIDS</span>
+  </h1>
+  <p class=\"hero-subtitle\">¡Reclama el Certificado de tu Pequeño Héroe Digital!</p>
+  <div class=\"mission-tag\">» MISIÓN: LA TRAMPA DEL PHISHING «</div>
+</section>
+
+<!-- MAIN -->
+<main class=\"container\">
+
+  <!-- FORMULARIO -->
+  <section class=\"form-card\" data-testid=\"name-form-card\">
+    <div class=\"form-header\">
+      <span class=\"step-num\">01</span>
+      <div>
+        <h2>Escribe el nombre de tu Cyber Kid</h2>
+        <p class=\"form-help\">Aparecerá en el certificado en tiempo real ↓</p>
+      </div>
+    </div>
+
+    <div class=\"input-wrap\">
+      <label for=\"kidName\" class=\"visually-hidden\">Nombre del niño</label>
+      <input
+        id=\"kidName\"
+        type=\"text\"
+        maxlength=\"32\"
+        placeholder=\"Ej: Mateo, Sofía, Lucas…\"
+        autocomplete=\"off\"
+        spellcheck=\"false\"
+        data-testid=\"kid-name-input\"
+      />
+      <span class=\"input-counter\"><span id=\"charCount\">0</span>/32</span>
+    </div>
+
+    <div class=\"actions\">
+      <button class=\"btn btn-primary\" id=\"downloadPdfBtn\" data-testid=\"download-pdf-btn\">
+        <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3v12m0 0l-4-4m4 4l4-4M5 21h14\"/></svg>
+        Descargar PDF
+      </button>
+      <button class=\"btn btn-secondary\" id=\"downloadPngBtn\" data-testid=\"download-png-btn\">
+        <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><circle cx=\"9\" cy=\"9\" r=\"2\"/><path d=\"M21 15l-5-5L5 21\"/></svg>
+        Descargar Imagen
+      </button>
+      <button class=\"btn btn-ghost\" id=\"printBtn\" data-testid=\"print-btn\">
+        <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z\"/></svg>
+        Imprimir
+      </button>
+    </div>
+
+    <div class=\"trust-row\">
+      <div class=\"trust-item\">
+        <span class=\"trust-icon\">🔒</span>
+        <div>
+          <strong>100% Privado</strong>
+          <small>Nada se envía a ningún servidor</small>
+        </div>
+      </div>
+      <div class=\"trust-item\">
+        <span class=\"trust-icon\">⚡</span>
+        <div>
+          <strong>Generado en tu dispositivo</strong>
+          <small>Funciona sin guardar datos</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISTA PREVIA DEL CERTIFICADO -->
+  <section class=\"cert-section\">
+    <div class=\"form-header\">
+      <span class=\"step-num\">02</span>
+      <div>
+        <h2>Vista Previa del Certificado</h2>
+        <p class=\"form-help\">Listo para imprimir o guardar</p>
+      </div>
+    </div>
+
+    <div class=\"cert-stage\">
+      <div id=\"certificate\" class=\"certificate\" data-testid=\"certificate-preview\">
+
+        <!-- Marco decorativo -->
+        <div class=\"cert-corner tl\"></div>
+        <div class=\"cert-corner tr\"></div>
+        <div class=\"cert-corner bl\"></div>
+        <div class=\"cert-corner br\"></div>
+
+        <!-- Sello DSA esquina superior izq -->
+        <div class=\"cert-shield\">
+          <svg viewBox=\"0 0 64 64\" width=\"100%\" height=\"100%\">
+            <defs>
+              <linearGradient id=\"shieldG2\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">
+                <stop offset=\"0%\" stop-color=\"#4fb3ff\"/>
+                <stop offset=\"100%\" stop-color=\"#0a3d6f\"/>
+              </linearGradient>
+            </defs>
+            <path d=\"M32 3 L58 13 V33 C58 48 45 58 32 62 C19 58 6 48 6 33 V13 Z\" fill=\"url(#shieldG2)\" stroke=\"#d4af37\" stroke-width=\"1.2\"/>
+            <text x=\"32\" y=\"28\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"Orbitron\" font-weight=\"900\" font-size=\"13\">DSA</text>
+            <circle cx=\"32\" cy=\"42\" r=\"4\" fill=\"#7fd3ff\"/>
+            <rect x=\"30\" y=\"42\" width=\"4\" height=\"7\" fill=\"#7fd3ff\"/>
+            <path d=\"M26 38 V32 a6 6 0 0 1 12 0 V38\" fill=\"none\" stroke=\"#7fd3ff\" stroke-width=\"2\"/>
+          </svg>
+        </div>
+
+        <!-- Trofeo esquina superior der -->
+        <div class=\"cert-trophy\">
+          <div class=\"trophy-banner\">MISIÓN<br/>COMPLETA</div>
+          <div class=\"trophy-icon\">🏆</div>
+        </div>
+
+        <!-- Encabezado -->
+        <div class=\"cert-header\">
+          <h3 class=\"cert-academy\">DIGITAL SHIELD</h3>
+          <div class=\"cert-academy-sub\">A C A D E M Y</div>
+          <div class=\"cert-by\">by <span class=\"cert-signature\">Oscar Rivera</span></div>
+        </div>
+
+        <div class=\"cert-divider\"><span></span></div>
+
+        <h2 class=\"cert-title\">CERTIFICADO</h2>
+        <div class=\"cert-subtitle\">DE LOGRO</div>
+
+        <div class=\"cert-presented\">SE OTORGA CON ORGULLO A</div>
+
+        <!-- NOMBRE DINÁMICO -->
+        <div class=\"cert-name\" id=\"certName\" data-testid=\"cert-name-display\">NOMBRE DEL HÉROE</div>
+        <div class=\"cert-name-line\"></div>
+
+        <p class=\"cert-description\">
+          Por completar exitosamente la misión:<br/>
+          <span class=\"cert-mission\">» LA TRAMPA DEL PHISHING «</span>
+        </p>
+
+        <p class=\"cert-merit\">
+          Has demostrado valentía, decisiones inteligentes y verdadera<br/>
+          consciencia digital. ¡Ahora eres protector del mundo digital!
+        </p>
+
+        <div class=\"cert-rank\">⟦ JUNIOR CYBER HERO ⟧</div>
+
+        <!-- Pie del certificado -->
+        <div class=\"cert-footer\">
+          <div class=\"cert-sign\">
+            <div class=\"cert-signature-name\">Oscar Rivera</div>
+            <div class=\"cert-sign-line\"></div>
+            <div class=\"cert-sign-role\">FUNDADOR &amp; EDUCADOR CYBER</div>
+            <div class=\"cert-sign-academy\">DIGITAL SHIELD ACADEMY</div>
+          </div>
+
+          <div class=\"cert-medal\">
+            <div class=\"medal-circle\">
+              <span class=\"medal-text-top\">DIGITAL SHIELD</span>
+              <span class=\"medal-dsa\">DSA</span>
+              <span class=\"medal-text-bot\">by Oscar Rivera</span>
+            </div>
+            <div class=\"medal-ribbon\"></div>
+          </div>
+
+          <div class=\"cert-date\">
+            <div class=\"cert-date-label\">FECHA DE LOGRO</div>
+            <div class=\"cert-date-value\" id=\"certDate\" data-testid=\"cert-date-display\">— / — / 20—</div>
+          </div>
+        </div>
+
+        <!-- Sello \"Cyber Hero\" -->
+        <div class=\"cert-stamp\">
+          <div class=\"stamp-inner\">
+            <div>CYBER</div>
+            <div>HERO</div>
+          </div>
+        </div>
+
+        <!-- Frase inferior -->
+        <div class=\"cert-bottom-bar\">
+          <div>🔐 Sé inteligente. Sé seguro.</div>
+          <div>Tú eres el futuro del ciberespacio.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class=\"cert-note\">
+      💡 Este certificado se genera <strong>localmente en tu dispositivo</strong>. No enviamos ninguna información a internet.
+    </p>
+  </section>
+
+  <!-- INFO DE PRIVACIDAD -->
+  <section class=\"privacy-section\" data-testid=\"privacy-section\">
+    <h3>🛡️ Nuestra Promesa de Privacidad</h3>
+    <p>
+      <strong>Cyber Kids respeta lo que enseña.</strong> Este libro le enseña a tu hijo a proteger sus datos.
+      Por eso nuestra web del certificado <strong>NO recolecta nombres, emails ni datos personales</strong>.
+      El nombre que escribes nunca sale de tu navegador. No tenemos servidor, no tenemos base de datos, no tenemos cookies de seguimiento.
+    </p>
+    <p class=\"privacy-author\">
+      — Oscar Rivera, Instructor Cisco Certified
+    </p>
+  </section>
+
+  <!-- PRÓXIMAS MISIONES -->
+  <section class=\"next-missions\" data-testid=\"next-missions\">
+    <h3>🚀 Próximas Misiones</h3>
+    <div class=\"missions-grid\">
+      <div class=\"mission-card\">
+        <div class=\"mission-num\">VOL. 2</div>
+        <div class=\"mission-name\">El Misterio de la Contraseña</div>
+        <div class=\"mission-status\">Próximamente</div>
+      </div>
+      <div class=\"mission-card\">
+        <div class=\"mission-num\">VOL. 3</div>
+        <div class=\"mission-name\">Misión Anti-Bullying</div>
+        <div class=\"mission-status\">Próximamente</div>
+      </div>
+      <div class=\"mission-card\">
+        <div class=\"mission-num\">VOL. 4</div>
+        <div class=\"mission-name\">El Secreto de la Privacidad</div>
+        <div class=\"mission-status\">Próximamente</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class=\"site-footer\">
+  <p>© 2026 Digital Shield Academy · Creado por Oscar Rivera</p>
+  <p class=\"footer-small\">Sé inteligente. Sé seguro. ¡Sé un Cyber Kid!</p>
+</footer>
+
+<!-- Librerías para PDF e imagen (CDN, sin registro) -->
+<script src=\"https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js\"></script>
+<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js\"></script>
+<script src=\"app.js\"></script>
+</body>
+</html>
+"
+Observation: Create successful: /app/cyberkids-cert/index.html
