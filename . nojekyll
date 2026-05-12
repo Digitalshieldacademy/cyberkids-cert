@@ -1,3 +1,1 @@
 
-Action: file_editor create /app/cyberkids-cert/.nojekyll --file-text ""
-Observation: Failed to create file: Parameter `file_text` is required for command: `create`
