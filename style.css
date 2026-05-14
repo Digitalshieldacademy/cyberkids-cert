@@ -972,3 +972,392 @@ body{
     justify-content:center;
   }
 }
+/* =========================================================
+   CERTIFICADO PREMIUM FINAL
+========================================================= */
+
+.certificate{
+
+  width:1000px;
+  height:720px;
+
+  position:relative;
+  overflow:hidden;
+
+  border-radius:18px;
+
+  padding:40px;
+
+  background:
+    linear-gradient(
+      rgba(255,255,255,.96),
+      rgba(255,255,255,.96)
+    ),
+    url("certificado-premium.png");
+
+  background-size:cover;
+  background-position:center;
+
+  box-shadow:
+    0 0 0 6px #0d4d8c,
+    0 0 0 8px #d4af37,
+    0 20px 80px rgba(0,0,0,.45);
+
+  color:#091a44;
+}
+
+/* CAPA SUAVE */
+.certificate::before{
+
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      rgba(255,255,255,.08),
+      rgba(255,255,255,.08)
+    );
+
+  pointer-events:none;
+}
+
+/* =========================================================
+   LOGO SUPERIOR
+========================================================= */
+
+.cert-top-logo{
+
+  position:absolute;
+
+  top:30px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  text-align:center;
+
+  z-index:5;
+}
+
+.cert-top-logo h1{
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:44px;
+  font-weight:900;
+
+  letter-spacing:4px;
+
+  color:#0b1d52;
+}
+
+.cert-top-logo span{
+
+  display:block;
+
+  font-size:16px;
+
+  letter-spacing:10px;
+
+  color:#4b88d8;
+
+  margin-top:6px;
+}
+
+/* =========================================================
+   TITULO CERTIFICADO
+========================================================= */
+
+.cert-title{
+
+  position:absolute;
+
+  top:170px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:70px;
+  font-weight:900;
+
+  letter-spacing:6px;
+
+  color:#091a44;
+
+  z-index:5;
+}
+
+.cert-subtitle{
+
+  position:absolute;
+
+  top:255px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:16px;
+
+  letter-spacing:8px;
+
+  color:#6d6d6d;
+
+  z-index:5;
+}
+
+/* =========================================================
+   NOMBRE DEL NIÑO
+========================================================= */
+
+.cert-name{
+
+  position:absolute;
+
+  top:340px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:80%;
+
+  text-align:center;
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:54px;
+  font-weight:900;
+
+  letter-spacing:3px;
+
+  color:#091a44;
+
+  z-index:5;
+}
+
+.cert-name.placeholder{
+
+  opacity:.5;
+}
+
+/* =========================================================
+   TEXTO CENTRAL
+========================================================= */
+
+.cert-description{
+
+  position:absolute;
+
+  top:445px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:75%;
+
+  text-align:center;
+
+  font-size:22px;
+
+  line-height:1.5;
+
+  color:#444;
+
+  z-index:5;
+}
+
+.cert-mission{
+
+  color:#c59a1b;
+
+  font-weight:700;
+}
+
+/* =========================================================
+   JUNIOR HERO
+========================================================= */
+
+.cert-hero{
+
+  position:absolute;
+
+  top:565px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:38px;
+  font-weight:900;
+
+  letter-spacing:4px;
+
+  color:#3298ff;
+
+  z-index:5;
+}
+
+/* =========================================================
+   FIRMA
+========================================================= */
+
+.cert-signature{
+
+  position:absolute;
+
+  left:90px;
+  bottom:60px;
+
+  z-index:5;
+}
+
+.cert-signature-name{
+
+  font-family:cursive;
+
+  font-size:38px;
+
+  color:#111;
+}
+
+.cert-signature-role{
+
+  margin-top:10px;
+
+  font-size:18px;
+
+  line-height:1.4;
+
+  color:#444;
+}
+
+/* =========================================================
+   FECHA
+========================================================= */
+
+.cert-date-box{
+
+  position:absolute;
+
+  right:90px;
+  bottom:70px;
+
+  text-align:center;
+
+  z-index:5;
+}
+
+.cert-date-label{
+
+  font-size:16px;
+
+  color:#666;
+
+  margin-bottom:10px;
+}
+
+.cert-date{
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:22px;
+
+  color:#091a44;
+}
+
+/* =========================================================
+   PERSONAJES
+========================================================= */
+
+.cert-character{
+
+  position:absolute;
+
+  z-index:4;
+
+  pointer-events:none;
+}
+
+/* CYTHER */
+
+.cert-cypher{
+
+  width:170px;
+
+  left:30px;
+  bottom:90px;
+}
+
+/* LEO */
+
+.cert-leo{
+
+  width:180px;
+
+  right:20px;
+  bottom:70px;
+}
+
+/* MASKER */
+
+.cert-masker{
+
+  width:150px;
+
+  right:40px;
+  top:120px;
+
+  opacity:.22;
+}
+
+/* =========================================================
+   SELLOS
+========================================================= */
+
+.cert-badge{
+
+  position:absolute;
+
+  width:100px;
+
+  z-index:4;
+}
+
+.badge-left{
+
+  left:25px;
+  top:25px;
+}
+
+.badge-right{
+
+  right:25px;
+  top:25px;
+}
+
+.badge-bottom{
+
+  left:50%;
+  bottom:18px;
+
+  transform:translateX(-50%);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+  .certificate{
+
+    transform:scale(.58);
+    transform-origin:top left;
+  }
+   }
