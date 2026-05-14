@@ -461,6 +461,10 @@ body::before{
   background-position:center;
   background-repeat:no-repeat;
 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
   box-shadow:
     0 0 0 6px #0d4d8c,
     0 0 0 8px #d4af37,
@@ -468,7 +472,6 @@ body::before{
 }
 
 /* =========================================================
-   IMPORTANTE:
    OCULTAR TEXTOS DUPLICADOS
 ========================================================= */
 
@@ -490,36 +493,28 @@ body::before{
 
   position:absolute;
 
-  top:315px;
+  top:320px;
   left:50%;
 
   transform:translateX(-50%);
 
-  width:700px;
+  width:80%;
 
   text-align:center;
 
   font-family:'Orbitron',sans-serif;
 
-  font-size:54px;
+  font-size:48px;
 
   font-weight:900;
 
-  text-transform:uppercase;
+  color:#0a1b4f;
 
-  color:#081c63;
+  letter-spacing:1px;
 
-  letter-spacing:2px;
+  z-index:50;
 
-  z-index:20;
-
-  text-shadow:
-    0 2px 4px rgba(255,255,255,.5);
-}
-
-.cert-name.placeholder{
-
-  opacity:.45;
+  text-shadow:none;
 }
 
 /* =========================================================
