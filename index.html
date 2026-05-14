@@ -3,248 +3,386 @@
 
 <head>
 
-  <meta charset="UTF-8" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+<meta name="description"
+content="Reclama el certificado oficial Cyber Kids de Digital Shield Academy." />
 
-  <title>
-    Cyber Kids · Digital Shield Academy
-  </title>
+<meta name="theme-color" content="#07111f" />
 
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
+<title>Cyber Kids · Certificado Oficial</title>
 
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet"
-    href="style.css" />
+<link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
 
-  <!-- HEADER -->
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
 
-  <header class="site-header">
+<header class="site-header">
 
-    <div class="brand">
+  <div class="brand">
 
-      <img
-        src="assets/logo.png"
-        alt="DSA Logo"
-      >
+    <div class="brand-shield">
 
-      <div>
+      <svg viewBox="0 0 64 64" width="38" height="38">
 
-        <div class="brand-title">
-          DIGITAL SHIELD
-        </div>
+        <defs>
+          <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3aa9ff"/>
+            <stop offset="100%" stop-color="#0d4d8c"/>
+          </linearGradient>
+        </defs>
 
-        <div class="brand-sub">
-          ACADEMY
-        </div>
+        <path d="M32 4 L56 14 V32 C56 46 44 56 32 60 C20 56 8 46 8 32 V14 Z"
+        fill="url(#shieldGrad)"
+        stroke="#7fd3ff"
+        stroke-width="1.5"/>
 
+      </svg>
+
+    </div>
+
+    <div class="brand-text">
+
+      <div class="brand-title">
+        DIGITAL SHIELD
+      </div>
+
+      <div class="brand-sub">
+        ACADEMY
       </div>
 
     </div>
 
-    <div class="privacy-pill">
-      🔒 100% PRIVADO
+  </div>
+
+  <div class="privacy-pill">
+
+    <span class="pulse-dot"></span>
+
+    CERO DATOS GUARDADOS
+
+  </div>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-tagline">
+      EDUCACIÓN · SEGURIDAD · DIVERSIÓN
     </div>
 
-  </header>
+    <h1 class="hero-title">
 
-  <!-- HERO -->
+      <span class="t-blue">CYBER</span>
+      <span class="t-yellow">KIDS</span>
 
-  <section class="hero">
+    </h1>
 
-    <div class="hero-content">
+    <p class="hero-subtitle">
+      Reclama el Certificado Oficial de tu Pequeño Héroe Digital
+    </p>
 
-      <h1 class="hero-title">
+    <div class="mission-tag">
+      MISIÓN COMPLETADA · LA TRAMPA DEL PHISHING
+    </div>
 
-        <span class="t-blue">
-          CYBER
-        </span>
+  </div>
 
-        <span class="t-yellow">
-          KIDS
-        </span>
+  <div class="hero-characters">
 
-      </h1>
+    <img
+      src="assets/cypher.png"
+      class="hero-character cypher"
+      alt="Cypher"
+    >
 
-      <p class="hero-subtitle">
-        Certificado Oficial Digital Shield Academy
+    <img
+      src="assets/leo.png"
+      class="hero-character leo"
+      alt="Leo"
+    >
+
+    <img
+      src="assets/masker.png"
+      class="hero-character masker"
+      alt="Masker"
+    >
+
+  </div>
+
+</section>
+
+<main class="container">
+
+<section class="form-card">
+
+  <div class="form-header">
+
+    <span class="step-num">01</span>
+
+    <div>
+
+      <h2>
+        Escribe el nombre de tu Cyber Kid
+      </h2>
+
+      <p class="form-help">
+        El certificado se actualiza automáticamente
       </p>
 
-      <div class="mission-tag">
-        MISIÓN · LA TRAMPA DEL PHISHING
+    </div>
+
+  </div>
+
+  <div class="input-wrap">
+
+    <input
+      id="kidName"
+      type="text"
+      maxlength="32"
+      placeholder="Ej: Sofía Rivera"
+      autocomplete="off"
+    />
+
+    <span class="input-counter">
+
+      <span id="charCount">0</span>/32
+
+    </span>
+
+  </div>
+
+  <div class="actions">
+
+    <button class="btn btn-primary" id="downloadPdfBtn">
+      Descargar PDF
+    </button>
+
+    <button class="btn btn-secondary" id="downloadPngBtn">
+      Descargar Imagen
+    </button>
+
+    <button class="btn btn-ghost" id="printBtn">
+      Imprimir
+    </button>
+
+  </div>
+
+</section>
+
+<section class="cert-section">
+
+  <div class="form-header">
+
+    <span class="step-num">02</span>
+
+    <div>
+
+      <h2>
+        Vista previa del certificado
+      </h2>
+
+      <p class="form-help">
+        Descárgalo o imprímelo en segundos
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="cert-stage">
+
+    <div id="certificate" class="certificate">
+
+      <div class="certificate-overlay"></div>
+
+      <!-- PERSONAJES -->
+
+      <img
+        src="assets/cypher.png"
+        class="cert-character cert-cypher"
+        alt="Cypher"
+      >
+
+      <img
+        src="assets/leo.png"
+        class="cert-character cert-leo"
+        alt="Leo"
+      >
+
+      <img
+        src="assets/masker.png"
+        class="cert-character cert-masker"
+        alt="Masker"
+      >
+
+      <!-- TITULO -->
+
+      <h2 class="cert-title">
+        CERTIFICADO
+      </h2>
+
+      <div class="cert-subtitle">
+        DE LOGRO
+      </div>
+
+      <!-- NOMBRE -->
+
+      <div class="cert-name" id="certName">
+        NOMBRE DEL HÉROE
+      </div>
+
+      <!-- DESCRIPCION -->
+
+      <p class="cert-description">
+
+        Por completar exitosamente la misión:
+
+        <span class="cert-mission">
+          LA TRAMPA DEL PHISHING
+        </span>
+
+      </p>
+
+      <div class="cert-hero">
+        JUNIOR CYBER HERO
+      </div>
+
+      <!-- FECHA -->
+
+      <div class="cert-date-box">
+
+        <div class="cert-date-label">
+          FECHA DE LOGRO
+        </div>
+
+        <div class="cert-date" id="certDate">
+          -- / -- / ----
+        </div>
+
+      </div>
+
+      <!-- FIRMA -->
+
+      <div class="cert-signature">
+
+        <div class="cert-signature-name">
+          Oscar Rivera
+        </div>
+
+        <div class="cert-signature-role">
+          Fundador · Digital Shield Academy
+        </div>
+
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- MAIN -->
+</section>
 
-  <main class="container">
+<section class="privacy-section">
 
-    <!-- FORM -->
+  <h3>
+    🛡️ Nuestra Promesa de Privacidad
+  </h3>
 
-    <section class="form-card">
+  <p>
 
-      <div class="form-header">
+    Esta página no almacena nombres,
+    no utiliza servidores y no recopila información.
 
-        <span class="step-num">
-          01
-        </span>
+  </p>
 
-        <div>
+  <p>
 
-          <h2>
-            Nombre del Cyber Kid
-          </h2>
+    Todo el certificado se genera directamente
+    en tu navegador.
 
-          <p class="form-help">
-            El certificado se actualiza automáticamente
-          </p>
+  </p>
 
-        </div>
+</section>
 
+<section class="next-missions">
+
+  <h3>
+    🚀 Próximas Misiones
+  </h3>
+
+  <div class="missions-grid">
+
+    <div class="mission-card">
+
+      <div class="mission-num">
+        VOL. 2
       </div>
 
-      <div class="input-wrap">
-
-        <input
-          id="kidName"
-          type="text"
-          maxlength="32"
-          placeholder="Ej: Sofía Rivera"
-        />
-
+      <div class="mission-name">
+        El Misterio de la Contraseña
       </div>
 
-      <!-- BOTONES -->
+    </div>
 
-      <div class="actions">
+    <div class="mission-card">
 
-        <button
-          class="btn btn-primary"
-          id="downloadPdfBtn">
-
-          Descargar PDF
-
-        </button>
-
-        <button
-          class="btn btn-secondary"
-          id="downloadPngBtn">
-
-          Descargar Imagen
-
-        </button>
-
-        <button
-          class="btn btn-ghost"
-          id="printBtn">
-
-          Imprimir
-
-        </button>
-
+      <div class="mission-num">
+        VOL. 3
       </div>
 
-    </section>
-
-    <!-- CERTIFICADO -->
-
-    <section class="cert-section">
-
-      <div class="form-header">
-
-        <span class="step-num">
-          02
-        </span>
-
-        <div>
-
-          <h2>
-            Vista previa
-          </h2>
-
-          <p class="form-help">
-            Certificado Premium Oficial
-          </p>
-
-        </div>
-
+      <div class="mission-name">
+        Misión Anti-Bullying
       </div>
 
-      <div class="cert-stage">
+    </div>
 
-        <div
-          id="certificate"
-          class="certificate">
+    <div class="mission-card">
 
-          <!-- NOMBRE -->
-
-          <div
-            class="cert-name"
-            id="certName">
-
-            NOMBRE DEL HÉROE
-
-          </div>
-
-          <!-- FECHA -->
-
-          <div class="cert-date">
-
-            <div class="cert-date-label">
-              FECHA DE LOGRO
-            </div>
-
-            <div
-              class="cert-date-value"
-              id="certDate">
-
-              -- / -- / ----
-
-            </div>
-
-          </div>
-
-        </div>
-
+      <div class="mission-num">
+        VOL. 4
       </div>
 
-    </section>
+      <div class="mission-name">
+        El Secreto de la Privacidad
+      </div>
 
-  </main>
+    </div>
 
-  <!-- FOOTER -->
+  </div>
 
-  <footer class="site-footer">
+</section>
 
+</main>
+
+<footer class="site-footer">
+
+  <p>
     © 2026 Digital Shield Academy
+  </p>
 
-  </footer>
+  <p>
+    Sé inteligente. Sé seguro. ¡Sé un Cyber Kid!
+  </p>
 
-  <!-- LIBRERÍAS -->
+</footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-  <script src="app.js"></script>
+<script src="app.js"></script>
 
 </body>
-
 </html>
