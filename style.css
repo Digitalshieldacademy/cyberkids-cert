@@ -1,6 +1,6 @@
 /* =========================================================
    CYBER KIDS · Digital Shield Academy
-   PREMIUM FINAL CSS
+   PREMIUM FINAL CSS · FIXED VERSION
 ========================================================= */
 
 *{
@@ -266,50 +266,6 @@ body::before{
 }
 
 /* =========================================================
-   PERSONAJES HERO
-========================================================= */
-
-.hero-characters{
-
-  position:absolute;
-  inset:0;
-
-  pointer-events:none;
-}
-
-.hero-character{
-
-  position:absolute;
-
-  filter:
-    drop-shadow(0 0 30px rgba(58,169,255,.25));
-}
-
-.cypher{
-
-  width:220px;
-
-  left:20px;
-  bottom:10px;
-}
-
-.leo{
-
-  width:230px;
-
-  right:20px;
-  bottom:10px;
-}
-
-.masker{
-
-  width:160px;
-
-  top:30px;
-  right:38%;
-}
-
-/* =========================================================
    CONTAINER
 ========================================================= */
 
@@ -499,15 +455,11 @@ body::before{
 
   border-radius:20px;
 
-  background:
-    linear-gradient(
-      rgba(255,255,255,.95),
-      rgba(255,255,255,.95)
-    ),
-    url("certificado-premium.png");
+  background:url("certificado-premium.png");
 
   background-size:cover;
   background-position:center;
+  background-repeat:no-repeat;
 
   box-shadow:
     0 0 0 6px #0d4d8c,
@@ -516,57 +468,34 @@ body::before{
 }
 
 /* =========================================================
-   TEXTOS CERTIFICADO
+   IMPORTANTE:
+   OCULTAR TEXTOS DUPLICADOS
 ========================================================= */
 
-.cert-title{
+.cert-title,
+.cert-subtitle,
+.cert-description,
+.cert-hero,
+.cert-signature,
+.cert-date-box{
 
-  position:absolute;
-
-  top:160px;
-  left:50%;
-
-  transform:translateX(-50%);
-
-  font-family:'Orbitron',sans-serif;
-
-  font-size:74px;
-
-  font-weight:900;
-
-  color:#091a44;
-
-  letter-spacing:4px;
+  display:none;
 }
 
-.cert-subtitle{
-
-  position:absolute;
-
-  top:250px;
-  left:50%;
-
-  transform:translateX(-50%);
-
-  font-family:'Orbitron',sans-serif;
-
-  font-size:16px;
-
-  letter-spacing:8px;
-
-  color:#777;
-}
+/* =========================================================
+   NOMBRE DINÁMICO
+========================================================= */
 
 .cert-name{
 
   position:absolute;
 
-  top:330px;
+  top:315px;
   left:50%;
 
   transform:translateX(-50%);
 
-  width:80%;
+  width:700px;
 
   text-align:center;
 
@@ -576,121 +505,21 @@ body::before{
 
   font-weight:900;
 
-  color:#091a44;
+  text-transform:uppercase;
+
+  color:#081c63;
+
+  letter-spacing:2px;
+
+  z-index:20;
+
+  text-shadow:
+    0 2px 4px rgba(255,255,255,.5);
 }
 
 .cert-name.placeholder{
 
   opacity:.45;
-}
-
-.cert-description{
-
-  position:absolute;
-
-  top:430px;
-  left:50%;
-
-  transform:translateX(-50%);
-
-  width:76%;
-
-  text-align:center;
-
-  font-size:22px;
-
-  line-height:1.5;
-
-  color:#444;
-}
-
-.cert-mission{
-
-  color:#c39a18;
-
-  font-weight:700;
-}
-
-.cert-hero{
-
-  position:absolute;
-
-  top:550px;
-  left:50%;
-
-  transform:translateX(-50%);
-
-  font-family:'Orbitron',sans-serif;
-
-  font-size:38px;
-
-  font-weight:900;
-
-  color:#3298ff;
-
-  letter-spacing:4px;
-}
-
-/* =========================================================
-   FECHA
-========================================================= */
-
-.cert-date-box{
-
-  position:absolute;
-
-  right:90px;
-  bottom:60px;
-
-  text-align:center;
-}
-
-.cert-date-label{
-
-  color:#666;
-
-  margin-bottom:10px;
-}
-
-.cert-date{
-
-  font-family:'Orbitron',sans-serif;
-
-  font-size:22px;
-
-  color:#091a44;
-}
-
-/* =========================================================
-   FIRMA
-========================================================= */
-
-.cert-signature{
-
-  position:absolute;
-
-  left:90px;
-  bottom:60px;
-}
-
-.cert-signature-name{
-
-  font-family:cursive;
-
-  font-size:38px;
-
-  color:#111;
-}
-
-.cert-signature-role{
-
-  margin-top:8px;
-
-  font-size:18px;
-
-  color:#444;
-
-  line-height:1.4;
 }
 
 /* =========================================================
@@ -732,10 +561,5 @@ body::before{
   .hero{
 
     min-height:650px;
-  }
-
-  .hero-character{
-
-    opacity:.25;
   }
 }
