@@ -531,21 +531,28 @@ body::before{
 
   position:absolute;
 
-  left:2000px;
+  left:640px;
 
-  bottom:105px;
+  bottom:110px;
 
-  width:180px;
+  width:140px;
 
-  text-align:center;
+  display:flex;
 
-  z-index:50;
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  z-index:999;
 }
+
 .cert-date-label{
 
   font-family:'Orbitron',sans-serif;
 
-  font-size:13px;
+  font-size:12px;
 
   font-weight:700;
 
@@ -556,13 +563,21 @@ body::before{
 
 .cert-date{
 
-  margin-top:6px;
+  margin-top:4px;
 
-  font-size:20px;
+  font-size:18px;
 
   font-weight:700;
 
   color:#1f1f1f;
+
+  letter-spacing:0;
+
+  line-height:1;
+
+  text-align:center;
+
+  width:100%;
 }
 
 /* =========================================================
