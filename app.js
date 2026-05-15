@@ -1,10 +1,11 @@
 /* =========================================================
    CYBER KIDS · CERTIFICADO PREMIUM
    Digital Shield Academy
-   by Oscar Rivera
-   ========================================================= */
+   FIXED VERSION · SIN DUPLICAR NOMBRE
+========================================================= */
 
 (function () {
+
   'use strict';
 
   const input        = document.getElementById('kidName');
@@ -21,7 +22,7 @@
 
   /* =========================================================
      FECHA ACTUAL
-     ========================================================= */
+  ========================================================= */
 
   function formatDateEs(d) {
 
@@ -40,31 +41,17 @@
   certDate.textContent = formatDateEs(new Date());
 
   /* =========================================================
-     EFECTO ESCRITURA CYBER
-     ========================================================= */
+     EFECTO TEXTO FIXED
+  ========================================================= */
 
   function cyberTypeEffect(text) {
 
-    certName.innerHTML = '';
-
-    let index = 0;
-
-    const interval = setInterval(() => {
-
-      certName.textContent += text[index];
-
-      index++;
-
-      if (index >= text.length) {
-        clearInterval(interval);
-      }
-
-    }, 45);
+    certName.textContent = text;
   }
 
   /* =========================================================
      LIMPIAR NOMBRE
-     ========================================================= */
+  ========================================================= */
 
   function cleanName(raw) {
 
@@ -78,7 +65,7 @@
 
   /* =========================================================
      BOTONES
-     ========================================================= */
+  ========================================================= */
 
   function enableButtons(on) {
 
@@ -89,7 +76,7 @@
 
   /* =========================================================
      ACTUALIZAR PREVIEW
-     ========================================================= */
+  ========================================================= */
 
   function updatePreview() {
 
@@ -132,7 +119,7 @@
 
   /* =========================================================
      HERO MODE
-     ========================================================= */
+  ========================================================= */
 
   function activateHeroMode() {
 
@@ -147,8 +134,8 @@
   }
 
   /* =========================================================
-     PARTICULAS CYBER
-     ========================================================= */
+     PARTICULAS
+  ========================================================= */
 
   function launchParticles() {
 
@@ -180,29 +167,27 @@
 
   /* =========================================================
      RENDER CERTIFICADO
-     ========================================================= */
+  ========================================================= */
 
   async function renderCertCanvas() {
+
+    await document.fonts.ready;
 
     return await html2canvas(certificate, {
 
       backgroundColor: '#ffffff',
 
-      scale: 3,
+      scale: 2,
 
       useCORS: true,
 
-      logging: false,
-
-      windowWidth: 1200,
-
-      windowHeight: 900
+      logging: false
     });
   }
 
   /* =========================================================
      NOMBRE ARCHIVO
-     ========================================================= */
+  ========================================================= */
 
   function safeFileName(name) {
 
@@ -215,7 +200,7 @@
 
   /* =========================================================
      CONFETTI
-     ========================================================= */
+  ========================================================= */
 
   function launchConfetti() {
 
@@ -244,7 +229,7 @@
 
   /* =========================================================
      DESCARGAR PNG
-     ========================================================= */
+  ========================================================= */
 
   btnPng.addEventListener('click', async () => {
 
@@ -277,8 +262,7 @@
 
     } finally {
 
-      btnPng.innerHTML =
-        '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> Descargar Imagen';
+      btnPng.textContent = 'Descargar Imagen';
 
       enableButtons(true);
     }
@@ -286,7 +270,7 @@
 
   /* =========================================================
      DESCARGAR PDF
-     ========================================================= */
+  ========================================================= */
 
   btnPdf.addEventListener('click', async () => {
 
@@ -339,8 +323,7 @@
 
     } finally {
 
-      btnPdf.innerHTML =
-        '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Descargar PDF';
+      btnPdf.textContent = 'Descargar PDF';
 
       enableButtons(true);
     }
@@ -348,7 +331,7 @@
 
   /* =========================================================
      IMPRIMIR
-     ========================================================= */
+  ========================================================= */
 
   btnPrint.addEventListener('click', async () => {
 
@@ -424,65 +407,18 @@
 
     } finally {
 
-      btnPrint.innerHTML =
-        '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg> Imprimir';
+      btnPrint.textContent = 'Imprimir';
 
       enableButtons(true);
     }
   });
 
   /* =========================================================
-     RESPONSIVE SCALE
-     ========================================================= */
-
-  function scaleCertificate() {
-
-    const stage = document.querySelector('.cert-stage');
-
-    if (!stage) return;
-
-    const stageW = stage.clientWidth - 20;
-
-    const certW = 1000;
-
-    if (stageW < certW) {
-
-      const scale = stageW / certW;
-
-      certificate.style.transform =
-        `scale(${scale})`;
-
-      certificate.style.transformOrigin =
-        'top left';
-
-      certificate.style.marginBottom =
-        `${(scale - 1) * 720}px`;
-
-    } else {
-
-      certificate.style.transform = '';
-
-      certificate.style.marginBottom = '';
-    }
-  }
-
-  window.addEventListener('resize', scaleCertificate);
-
-  window.addEventListener('load', scaleCertificate);
-
-  scaleCertificate();
-
-  /* =========================================================
      INICIAL
-     ========================================================= */
+  ========================================================= */
 
   certName.classList.add('placeholder');
 
   enableButtons(false);
-
-  console.log(
-    '%c🔒 CYBER KIDS · PRIVACIDAD TOTAL',
-    'background:#0d4d8c;color:#7fd3ff;padding:8px 14px;border-radius:6px;font-weight:bold;'
-  );
 
 })();
