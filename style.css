@@ -483,8 +483,7 @@ body::before{
 .cert-subtitle,
 .cert-description,
 .cert-hero,
-.cert-signature,
-.cert-date-box{
+.cert-signature{
 
   display:none;
 }
@@ -497,7 +496,7 @@ body::before{
 
   position:absolute;
 
-  top:320px;
+  top:295px;
   left:50%;
 
   transform:translateX(-50%);
@@ -521,6 +520,47 @@ body::before{
   text-shadow:none;
 
   filter:none !important;
+}
+
+/* =========================================================
+   FECHA DINÁMICA
+========================================================= */
+
+.cert-date-box{
+
+  position:absolute;
+
+  right:90px;
+
+  bottom:105px;
+
+  text-align:center;
+
+  z-index:50;
+}
+
+.cert-date-label{
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  color:#2f4f91;
+
+  letter-spacing:1px;
+}
+
+.cert-date{
+
+  margin-top:8px;
+
+  font-size:26px;
+
+  font-weight:700;
+
+  color:#1f1f1f;
 }
 
 /* =========================================================
