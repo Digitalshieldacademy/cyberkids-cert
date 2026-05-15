@@ -437,7 +437,11 @@ body::before{
 
 .cert-stage{
 
-  overflow-x:auto;
+  overflow:auto;
+
+  -webkit-overflow-scrolling:touch;
+
+  width:100%;
 
   padding:10px;
 }
@@ -515,6 +519,8 @@ body::before{
   z-index:50;
 
   text-shadow:none;
+
+  filter:none !important;
 }
 
 /* =========================================================
@@ -531,16 +537,30 @@ body::before{
 }
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE FIXED · HTML2CANVAS SAFE
 ========================================================= */
 
 @media(max-width:900px){
 
+  .cert-stage{
+
+    overflow-x:auto;
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    padding-bottom:20px;
+  }
+
   .certificate{
 
-    transform:scale(.58);
+    width:1000px;
+    height:720px;
 
-    transform-origin:top left;
+    min-width:1000px;
+
+    transform:none !important;
   }
 
   .actions{
@@ -557,4 +577,5 @@ body::before{
 
     min-height:650px;
   }
+
 }
