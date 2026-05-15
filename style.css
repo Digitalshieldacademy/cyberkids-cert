@@ -496,7 +496,8 @@ body::before{
 
   position:absolute;
 
-  top:295px;
+  top:315px;
+
   left:50%;
 
   transform:translateX(-50%);
@@ -530,9 +531,9 @@ body::before{
 
   position:absolute;
 
-  right:90px;
+  right:35px;
 
-  bottom:105px;
+  bottom:115px;
 
   text-align:center;
 
@@ -556,7 +557,7 @@ body::before{
 
   margin-top:8px;
 
-  font-size:26px;
+  font-size:24px;
 
   font-weight:700;
 
