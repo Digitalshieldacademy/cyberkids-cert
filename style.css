@@ -531,11 +531,13 @@ body::before{
 
   position:absolute;
 
-  right:240px;
-
   bottom:110px;
 
-  width:140px;
+  right:260px;
+
+  transform:translateX(-120px);
+
+  width:220px;
 
   display:flex;
 
