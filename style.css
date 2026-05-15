@@ -531,15 +531,16 @@ body::before{
 
   position:absolute;
 
-  right:220px;
+  left:690px;
 
-  bottom:115px;
+  bottom:105px;
+
+  width:180px;
 
   text-align:center;
 
   z-index:50;
 }
-
 .cert-date-label{
 
   font-family:'Orbitron',sans-serif;
