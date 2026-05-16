@@ -26,16 +26,13 @@
 
   function formatDateEs(d) {
 
-    const meses = [
-      'enero','febrero','marzo','abril','mayo','junio',
-      'julio','agosto','septiembre','octubre','noviembre','diciembre'
-    ];
+  const dia = String(d.getDate()).padStart(2, '0');
 
-    const dia  = String(d.getDate()).padStart(2, '0');
-    const mes  = meses[d.getMonth()];
-    const anio = d.getFullYear();
+  const mes = String(d.getMonth() + 1).padStart(2, '0');
 
-    return `${dia} de ${mes} de ${anio}`;
+  const anio = d.getFullYear();
+
+  return `${dia}/${mes}/${anio}`;
   }
 
   certDate.textContent = formatDateEs(new Date());
