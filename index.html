@@ -21,29 +21,11 @@ content="Reclama el certificado oficial Cyber Kids de Digital Shield Academy." /
 <link rel="stylesheet" href="style.css" />
 
 </head>
-<script>
 
-function playMusic(){
-
-  const music =
-    document.getElementById("bgMusic");
-
-  music.play();
-}
-
-</script>
-<script>
-
-function playMusic(){
-
-  const music =
-    document.getElementById("bgMusic");
-
-  music.play();
-}
-
-</script>  
 <body>
+
+<!-- POSTER HERO -->
+
 <section class="poster-hero">
 
   <img
@@ -74,44 +56,7 @@ function playMusic(){
 
 </section>
 
-<audio id="bgMusic">
-
-  <source
-    src="digital-hero.mp3"
-    type="audio/mpeg"
-  >
-
-</audio>
-  
-<section class="poster-hero">
-
-  <img
-    src="poster.jpg"
-    class="poster-image"
-    alt="CyberKids Poster"
-  >
-
-  <div class="poster-overlay">
-
-    <h1>
-      CYBERKIDS
-    </h1>
-
-    <p>
-      The Internet Has a Dark Side.<br>
-      Become the Digital Hero the World Needs.
-    </p>
-
-    <button
-      class="soundtrack-btn"
-      onclick="playMusic()"
-    >
-      ▶ PLAY OFFICIAL SOUNDTRACK
-    </button>
-
-  </div>
-
-</section>
+<!-- SOUNDTRACK -->
 
 <audio id="bgMusic">
 
@@ -121,12 +66,13 @@ function playMusic(){
   >
 
 </audio>
+
+<!-- BACKGROUND -->
 
 <div class="bg-grid"></div>
 <div class="bg-glow"></div>
 
-<header class="site-header">
-
+<!-- HEADER -->
 
 <header class="site-header">
 
@@ -137,16 +83,23 @@ function playMusic(){
       <svg viewBox="0 0 64 64" width="38" height="38">
 
         <defs>
+
           <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+
             <stop offset="0%" stop-color="#3aa9ff"/>
+
             <stop offset="100%" stop-color="#0d4d8c"/>
+
           </linearGradient>
+
         </defs>
 
-        <path d="M32 4 L56 14 V32 C56 46 44 56 32 60 C20 56 8 46 8 32 V14 Z"
-        fill="url(#shieldGrad)"
-        stroke="#7fd3ff"
-        stroke-width="1.5"/>
+        <path
+          d="M32 4 L56 14 V32 C56 46 44 56 32 60 C20 56 8 46 8 32 V14 Z"
+          fill="url(#shieldGrad)"
+          stroke="#7fd3ff"
+          stroke-width="1.5"
+        />
 
       </svg>
 
@@ -175,6 +128,8 @@ function playMusic(){
   </div>
 
 </header>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -225,7 +180,11 @@ function playMusic(){
 
 </section>
 
+<!-- MAIN -->
+
 <main class="container">
+
+<!-- FORM -->
 
 <section class="form-card">
 
@@ -283,6 +242,8 @@ function playMusic(){
 
 </section>
 
+<!-- CERTIFICATE -->
+
 <section class="cert-section">
 
   <div class="form-header">
@@ -309,8 +270,6 @@ function playMusic(){
 
       <div class="certificate-overlay"></div>
 
-      <!-- PERSONAJES -->
-
       <img
         src="assets/cypher.png"
         class="cert-character cert-cypher"
@@ -329,8 +288,6 @@ function playMusic(){
         alt="Masker"
       >
 
-      <!-- TITULO -->
-
       <h2 class="cert-title">
         CERTIFICADO
       </h2>
@@ -339,13 +296,9 @@ function playMusic(){
         DE LOGRO
       </div>
 
-      <!-- NOMBRE -->
-
       <div class="cert-name" id="certName">
         NOMBRE DEL HÉROE
       </div>
-
-      <!-- DESCRIPCION -->
 
       <p class="cert-description">
 
@@ -361,8 +314,6 @@ function playMusic(){
         JUNIOR CYBER HERO
       </div>
 
-      <!-- FECHA -->
-
       <div class="cert-date-box">
 
         <div class="cert-date-label">
@@ -374,8 +325,6 @@ function playMusic(){
         </div>
 
       </div>
-
-      <!-- FIRMA -->
 
       <div class="cert-signature">
 
@@ -394,6 +343,8 @@ function playMusic(){
   </div>
 
 </section>
+
+<!-- PRIVACY -->
 
 <section class="privacy-section">
 
@@ -416,6 +367,8 @@ function playMusic(){
   </p>
 
 </section>
+
+<!-- MISSIONS -->
 
 <section class="next-missions">
 
@@ -467,6 +420,8 @@ function playMusic(){
 
 </main>
 
+<!-- FOOTER -->
+
 <footer class="site-footer">
 
   <p>
@@ -479,11 +434,27 @@ function playMusic(){
 
 </footer>
 
+<!-- LIBRARIES -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <script src="app.js"></script>
+
+<!-- MUSIC -->
+
+<script>
+
+function playMusic(){
+
+  const music =
+    document.getElementById("bgMusic");
+
+  music.play();
+}
+
+</script>
 
 </body>
 </html>
