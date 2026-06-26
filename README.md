@@ -124,7 +124,7 @@ cyberkids-cert/
 
 # 🌟 Próximas Misiones
 
-- VOL. 2 — El Misterio de la Contraseña
+- VOL. 2 — Inteligencia Social
 - VOL. 3 — Misión Anti-Bullying
 - VOL. 4 — El Secreto de la Privacidad
 - VOL. 5 — La Trampa de los Juegos Online
